@@ -57,3 +57,45 @@ if (true) {
     }
     // console.log(website)
 }
+///   Note :>  this means that this is only used for object and it is used to access the object properties and methods
+
+const user1 = {
+    name: 'John',
+    age: 30,
+    greeting :function () {
+        console.log(`My name is ${this.name} and I am ${this.age} years old`);
+        
+    }
+
+}
+
+user1.greeting()
+
+user1.name= 'ahmad'
+user1.greeting()
+
+function name() {
+    const user = "ali"
+
+    // console.log(`${this.user} is a developer`);
+    
+}
+
+//Note  :> this is not used in function and cannot acces its properties  
+
+
+// IEFE Function
+  // named iefe function
+(function  add () {
+    console.log('Hello World');
+    
+})();
+
+// when two iefe function are called then comma is used to separate them otherwise gievs error
+
+ 
+ ( ()=>{
+    console.log('Hello World');
+ })();
+
+ 
